@@ -17,7 +17,7 @@
 # limitations under the License.
 #
 
-require_recipe "php::module_pear"
+require_recipe "php"
 
 %w{ pear.phpmd.org pear.pdepend.org }.each do |channel|
   php_pear_package channel do
