@@ -19,7 +19,7 @@
 
 require_recipe "php::module_pear"
 
-w%{ pear.phpmd.org pear.pdepend.org }.each do |channel|
+%w{ pear.phpmd.org pear.pdepend.org }.each do |channel|
   php_pear_package channel do
     action :discover
   end
