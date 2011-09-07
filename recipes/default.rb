@@ -20,7 +20,7 @@
 require_recipe "php"
 
 %w{ pear.phpmd.org pear.pdepend.org }.each do |channel|
-  php_pear_package channel do
+  php_pear_channel channel do
     action :discover
   end
 end
